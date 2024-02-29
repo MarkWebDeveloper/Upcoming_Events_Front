@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import axios from 'axios';
 import type Event from '@/models/Event';
+import { useEventsStore } from '@/stores/eventsStore';
 
-const props = defineProps<{
-  events: Event[]
-}>();
+const eventsStore = useEventsStore()
+
+// const props = defineProps<{
+//   events: Event[]
+// }>();
 
 const deleteEvent = async (eventId: number) => {
   try {
-    await axios.delete(`http://localhost:8080/api/v1/events/${eventId}`);
+    await axios.delete(`http://localhost:8080/api/v1/events/${eventId}`, {withCredentials:true});
   } catch (error) {
     console.error('Error al eliminar el evento:', error);
   }
@@ -17,7 +20,7 @@ const deleteEvent = async (eventId: number) => {
 
 <template>
   <div id="cards-container">
-    <div v-for="event in events" :key="event.id" class="card">
+    <div v-for="event in eventsStore.events" :key="event.id" class="card">
       <img :src="`/src/assets/img/${event.event_image}`" alt="" class="mainImage">
       <h2>{{ event.event_title }}</h2>
       <div class="location">

@@ -97,8 +97,8 @@ body {
 .form {
     background-color: rgba(0, 109, 176, 0.75);
     background-position: center;
-    height: 50vh;
-    width: 26vw;
+    height: 65vh;
+    width: 30vw;
     border-radius: 1rem;
     text-align: center;
     color: #FFFFFF;
@@ -123,7 +123,7 @@ button {
     width: 25%;
     height: 40%;
     border-radius: 0.5rem;
-    margin: 2%;
+    margin: 1%;
 }
 
 label {
@@ -135,7 +135,7 @@ input {
     border-radius: 0.6rem;
     background-color: #FAFAF9;
     border-color: #ffffff;
-    margin: 2%;
+    margin: 1%;
     width: 75%;
     height: 20%;
     font-size: 22px;

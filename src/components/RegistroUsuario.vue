@@ -107,8 +107,8 @@ body {
 .form {
   background-color:  rgb(39, 161, 56, 0.75);
   background-position: center;
-  height: 50vh;
-  width: 26vw;
+  height: 65vh;
+  width: 30vw;
   border-radius: 1rem;
   text-align: center;
   color: #FFFFFF;
