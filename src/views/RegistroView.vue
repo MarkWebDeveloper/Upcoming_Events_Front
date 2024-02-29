@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import RegistroUsuario from "@/components/RegistroUsuario.vue";
+import RegistroUsuario from '@/components/RegistroUsuario.vue';
+
 </script>
 <template>
   <div>
